@@ -5,9 +5,9 @@ import com.workintech.model.Weapon;
 
 public class Main {
     public static void main(String[] args) {
-        Point first = new com.workintech.model.Point(6, 5);
+        Point first = new Point(6, 5);
 
-        Point second = new com.workintech.model.Point(3, 1);
+        Point second = new Point(3, 1);
 
         System.out.println("distance(0,0)= " + first.distance());
 
