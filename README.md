@@ -9,28 +9,28 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 ### Hedeflerimiz:
 
-### Point Sınıfı
+### com.workintech.model.Point Sınıfı
 
-* ```Point``` isimli bir sınıf tanımlayınız.
+* ```com.workintech.model.Point``` isimli bir sınıf tanımlayınız.
 * Sınıfın 2 tane değişkeni olmalı x ve y ikisinin de değeri ```int``` olmalı.
 * Bu iki değişkene sadece bu sınıf içerisinden erişilebilinmeli.
-* Point sınıfı için bir adet ```constructor``` tanımlayınız. İki değeri de set edebilmeli.
+* com.workintech.model.Point sınıfı için bir adet ```constructor``` tanımlayınız. İki değeri de set edebilmeli.
 * İlgili iki değişken için getter ve setter metodlarını tanımlayınız.
-* Point sınıfı içerisinde bir tane ```distance``` isminde metod tanımlayınız.
+* com.workintech.model.Point sınıfı içerisinde bir tane ```distance``` isminde metod tanımlayınız.
 * distance metodu iki nokta arasındaki uzaklığı bulmaya yarar.
 * Bu işlemin matematiksel olarak yapımı: √ (xB − xA) * (xB - xA) + (yB − yA) * (yB - yA) şeklindedir.
 *  √ işlemi karekök işlemini tanımlar. ```Math.sqrt``` bu işlem için kullanılmalıdır.
 * distance metodu için 3 farklı ```overloading``` istenmektedir
 * ```distance()``` hiçbir değer almazsa (0,0) noktasına göre uzaklık hesaplanmalı.
-*  ```distance(Point p)``` şeklinde başka bir Point objesi alırsa verilen noktaya göre uzaklık hesaplanmalı.
+*  ```distance(com.workintech.model.Point p)``` şeklinde başka bir com.workintech.model.Point objesi alırsa verilen noktaya göre uzaklık hesaplanmalı.
 * ```distance(int a, int b)``` şeklinde 2 farklı int parametresi alınırsa (a,b) ye göre uzaklık bulunmalı.
 
 Aşağıdaki gibi bir test yapılabilir.
 
 INPUT
-Point first = new Point(6, 5);
+com.workintech.model.Point first = new com.workintech.model.Point(6, 5);
 
-Point second = new Point(3, 1);
+com.workintech.model.Point second = new com.workintech.model.Point(3, 1);
 
 System.out.println("distance(0,0)= " + first.distance());
 
@@ -38,7 +38,7 @@ System.out.println("distance(second)= " + first.distance(second));
 
 System.out.println("distance(2,2)= " + first.distance(2, 2));
 
-Point point = new Point(0,0);
+com.workintech.model.Point point = new com.workintech.model.Point(0,0);
 
 System.out.println("distance()= " + point.distance());
 
